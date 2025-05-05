@@ -1,36 +1,50 @@
 Senior Project Proposal - Stock trading AI analyst
 ===================================================
 
-**Student Name**: Michael Ludwikowski (put your name here followed by two spaces)  
-**Degree and Major**: B.S. in Computer Science (put your name here followed by two spaces)  
-**Project Advisor Name**: Dr. Hayes (put your name here followed by two spaces)  
-**Expected Graduation Date**: May 2026 (put the correct month and day here)
+**Student Name**: Michael Ludwikowski 
+**Degree and Major**: B.S. in Computer Science
+**Project Advisor Name**: Dr. Hayes  
+**Expected Graduation Date**: May 2026 
 
 
 Problem Statement
 -----------------
 
-Many people try getting into stock trading with no idea what they are doing. This leads to people investing money and then loosing it without knowing why.
+The stock market can be a confusing idea and many people lose money in it because they don't know what they are doing.
+
+The "ideal" state of affairs is everybody knowing how the stock market works and understanding how it can both affect their everyday life with purchases and how they can actually make money with it if they are smart enough. The current problem is that many people try getting into stock trading with no idea what they are doing. This leads to people investing money and then loosing it without knowing why. This is a big deal because it leads to people just loosing their money with no idea why or really where it went. Plenty of people hear about how people make hundreds of millions of dollars in the stock market and think that they can just hop in and do the same. The truth is that you have to be the top of the top and trading for years with loads of knoledge and experience before you can even come close to making a living off of trading. Even then, it's very easy to fall into a hole from which you need help to get out of if you can't trade your money back like in a case where the stocks are at a low point or recession. My program will be able to help first time or basic traders with understanding what the stock market is and how it works. It's great since it uses fake money and simulated stocks based off of real stock trading for people to freely test and experiment on. Further, there is an AI model that when implamented will be able to not only speculate what stocks are on the rise, but also auto-invest with specifics to try and earn you money since it is automatic and already trained. 
+
+Once more, there are tons of people who think they can come in to trading with little experience and come out on top of everyone else. The truth is, many people don't even know the basics of stock trading and will end up losing whatever money they put in. My program can provide a solution to this in that it not only teaches you what stock trading is, it trains you as well. This hopefully should be a sort of sandbox for people to learn and try to be profitable with simulated environments before using their real money. 
 
 
 Project Description
 -------------------
 
-Create a program that can simulate stock trading with fake money to simulate real trading in real time. Implament an AI that can speculate current trading
-prospects in what stocks may rise or lower in price. The AI could then possible invest for you when it sees a great stock to invest in.
+The program aims to simulate stock trading with fake money allowing users to experience what real-time trading looks like without the risk of loosing actual money. The program will integrate historical market data, allowing users to analyze real world trends in the stock market and start making educated decisions.
 
+There will also be an AI-powered trading assistant that can: 
+    -Predict market trends based on historical data
+    -Provide investment suggestions with confidence ratings and a rationale
+    -Automatically execute trades withing user-set risk factors and settings
+    -Track portfolio performance and generate a report 
+
+By combining real-world simulations, AI analysis, and educational tools, the project aims to be a comprehensive stock market learning experience. It will be equipting users with some practical skills to then go navigate into the real-world investing scene.
 
 Proposed Implementation Language(s) 
 -----------------------------------
 
-C++
-Python
-Java
+C++ for performance heavy tasks such as backend logic
+Python for AI and data analysis componets
+Java for the user interface development
 
 Libraries, Packages, Development Kits, etc. to be used in the proposed implementation languages(s)
 --------------------------------------------------------------------------------------------------
 
-OLLama v3.3
+OLLama v4.0 AI model for stock market predictions
+NumPy & Pandas for data processing and analysis
+Matplot & Seaborn for visualisation tools with stock trends and predictions
+TensorFlow/PyTorch for AI model training and implementation
+
 
 Additional Software/Equipment Needed
 ------------------------------------
@@ -41,14 +55,18 @@ Personal Motivation
 -------------------
 
 I tried teaching myself to invest, but it did not go well. I am trying to make a software to teach people the basics in a safe learning environment that could
-motivate and encourage further learning.
+motivate and encourage further learning. 
 
 Outline of Future Research Efforts
 ----------------------------------
 
-(What do you need to learn or figure out to complete this project? What tasks are you going to do the do that?)
 Learn to use and utilize AI, specifically OLLama. Make sure I know about stock strading as well to not put in misinformation.
+
 Learn to pull in live information for the AI.
+
+Study the Stock market trends to put in realistic data
+
+Refresh up on making a user interface and a HUD for users to use.
 
 Schedule
 --------
