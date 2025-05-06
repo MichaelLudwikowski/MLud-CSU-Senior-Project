@@ -33,8 +33,8 @@ By combining real-world simulations, AI analysis, and educational tools, the pro
 Proposed Implementation Language(s) 
 -----------------------------------
 
-C++ for performance heavy tasks such as backend logic
-Python for AI and data analysis componets
+C++ for performance heavy tasks such as backend logic and the Implamentation of the AI
+Python for data analysis componets
 Java for the user interface development
 
 Libraries, Packages, Development Kits, etc. to be used in the proposed implementation languages(s)
@@ -60,13 +60,9 @@ motivate and encourage further learning.
 Outline of Future Research Efforts
 ----------------------------------
 
-Learn to use and utilize AI, specifically OLLama. Make sure I know about stock strading as well to not put in misinformation.
+Learn to use and utilize AI, specifically OLLama. Explore what it is capable of in regards to data analysis, indicators, and risk assessment. Then, integrate it to retreive the latest stock market movements. Need to either look into another API like Polygon.io or Finnhub for real time stock market data. 
 
-Learn to pull in live information for the AI.
-
-Study the Stock market trends to put in realistic data
-
-Refresh up on making a user interface and a HUD for users to use.
+Study the Stock market trends to put in realistic data. Read online to see if something similar has been done before and take notes. This includes learning how to set up the AI so that it too knows when a stock might be trending upwards. 
 
 Schedule
 --------
@@ -83,18 +79,18 @@ Schedule
     -   June 1 - Continue research into stocks and AI
 
 *   Fall 2025 - CSCI 498
-    -   October 20 - 
-    -   October 27 - 
-    -   November 3 - 
-    -   November 10 - 
-    -   November 17 - 
-    -   November 20 - 
+    -   October 20 - Finalize research and begin design for the implamentation
+    -   October 27 - Set up AI integration pipelines using the OLLama bv4.0 model with real time stock data retrieval
+    -   November 3 - Prototype different UI versions with basic stock trading functionality
+    -   November 10 - Perform initial test cases on stock trending analysis models and AI
+    -   November 17 - Refine both the AI prediction accuracy and overall feel for the program and stock trading
+    -   November 20 - start implamenting educational material along with a guide for how to use the program
 
 *   Spring 2026 - CSCI 499 (more detail will be added here once you are closer)
-    -   Weeks 1-4 - Implement test plan
-    -   Week 5 - Evaluate test results
+    -   Weeks 1-4 - Implement test plan and take more data for refining
+    -   Week 5 - Evaluate test results and adjust accordingly
     -   Week 6-10 - Apply updates and bug fixes based on the results
-    -   Week 8 - Computer the first 4 chapters of the defense documentation.
+    -   Week 8 - Take notes and track logs to test progress so far with the AI model.
     -   ...
 
 
