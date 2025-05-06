@@ -14,7 +14,7 @@ Senior Project Requirements: Stock Trading with AI Assistant
   
        Requirement Type: Functional
        Priority Level: Medium
-       Fit Criteria: Users can manually reset their account and start over with with confirmation steps
+       Fit Criteria: Users can manually reset their account and start over with confirmation steps to how it was when they first started
        Rationale: Provides a fresh start for users who feel stuck or confused  
 
        Requirement Type: Functional
@@ -24,18 +24,18 @@ Senior Project Requirements: Stock Trading with AI Assistant
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system provides users with notifications, updated, and alerts
+       Fit Criteria: The system provides users with notifications, updated, and alerts whenever a stock meets a specified alert ammount. 
        Rationale: Keeps the user informed of what might be going on at a certain time i.e. AI updates
 
 *   Fake Money & Wallet System (6-10)
 *      Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system initializes new accounts with a default balance
+       Fit Criteria: The system initializes new accounts with a default balance of $1000
        Rationale: Creates a standard starting point for all users
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The current balance is displayed in the wallet interface
+       Fit Criteria: The current balance is displayed in the wallet interface 
        Rationale: Ensures that the user is keeping track of their balance
  
        Requirement Type: Functional
@@ -45,18 +45,18 @@ Senior Project Requirements: Stock Trading with AI Assistant
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: Users receive a notification when their balance reaches a certain ammount
+       Fit Criteria: Users receive a notification when their balance goes below $100 (including their portfolio)
        Rationale: Helps the users track their funds
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system generates transaction logs for the user to see
+       Fit Criteria: The system generates transaction logs of all trades they make for the user to see
        Rationale: Provides a transparency for the user to view
 
 *   Stock Market Simulation (11 - 19)
 *      Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system uses real historic data to base its simulated stocks
+       Fit Criteria: The system uses real historic data over the past couple of months to base its simulated stocks
        Rationale: Provides the user with a realistic idea of how stocks could work
 
        Requirement Type: Functional
@@ -66,7 +66,7 @@ Senior Project Requirements: Stock Trading with AI Assistant
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: Users can view a stocks charts along with their recent history and performance
+       Fit Criteria: Users can view stocks charts along with their recent history and performance ovre the past 3 months.
        Rationale: Allows the users to view how the company has been doing
   
        Requirement Type: Functional
@@ -76,17 +76,17 @@ Senior Project Requirements: Stock Trading with AI Assistant
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: Allows the user to "buy" and "sell" shares in a stock using fake money
+       Fit Criteria: Allows the user to "buy" and "sell" shares in a stock using fake money that are put into their portfolio
        Rationale: The whole idea behind the project, buying and selling stocks and trying to sell high
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: Program shall provide confirmation logs when the user completes a transaction
+       Fit Criteria: Program shall provide confirmation logs when the user completes a transaction 
        Rationale: Confirms that a purchase goes through
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: Program shows the users portfolio information with what stock they own
+       Fit Criteria: Program shows the users portfolio information with all stock they own
        Rationale: Allows the users to see where their money is currently in the stock market
 
        Requirement Type: Functional
@@ -96,18 +96,18 @@ Senior Project Requirements: Stock Trading with AI Assistant
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system provides a portfolio overview, including overall gains and losses over time
+       Fit Criteria: The system provides a portfolio overview, including overall gains and losses over their entire time trading
        Rationale: Helpps users evaluate their performance over time
 
 *   AI Analyst Potential Functions (20-26)
 *      Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The AI model generates predictions based on historical performance data
+       Fit Criteria: The AI model generates predictions based on months of historical data
        Rationale: Enhances the decision making for unsure or new users
  
        Requirement Type: Functional
        Priority Level: Medium
-       Fit Criteria: Shows the AI's top stock perdictions for the day
+       Fit Criteria: Shows the AI's top stock perdiction with the highset and lowest percentage change for the day every day
        Rationale: Gives users a base from where to start looking
 
        Requirement Type: Functional
@@ -127,24 +127,24 @@ Senior Project Requirements: Stock Trading with AI Assistant
 
        Requirement Type: Functional
        Priority Level: Medium
-       Fit Criteria: Users can view the AI's trading history for analysis
+       Fit Criteria: Users can view the AI's trading history over all time it was on for analysis
        Rationale: Helps the user track the AU investment performance
 
 * AI Training and Simulation (27-30)
   
        Requirement Type: Functional
        Priority Level: Critical
-       Fit Criteria: The system shall simulate real world training events to train the AI learning model 
+       Fit Criteria: The system shall simulate real world training events over the past 3 months to train the AI learning model 
        Rationale: basing the AI off of real data can make it more accurate than simulated data
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall include tools and measure the AI's prediction accuracy
+       Fit Criteria: The system shall include tools to measure the AI's prediction accuracy to see how off it might be. I am hoping to start in the positive range, then go from there to around as low as 10% error if possible.
        Rationale: Make sure the AI is staying on track with it's predictions
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall display the prediction performance over time and over different simulations
+       Fit Criteria: The system shall display the prediction performance over all its lifetime and over different simulations
        Rationale: Allows perspective for how the AI is doing over a long period of time
  
        Requirement Type: Functional
@@ -156,27 +156,27 @@ Senior Project Requirements: Stock Trading with AI Assistant
   
        Requirement Type: Functional
        Priority Level: Medium
-       Fit Criteria: The system shall offer first time traders and users with a basic explanation of the stock market
+       Fit Criteria: The system shall offer first time traders and users with a basic explanation of the stock market going over what stocks are, who owns them, and how you make money from them. 
        Rationale: Explains to users who may have never done anything with the stock market with a quick explanation of the basics
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall show users why certain trades may be favorable or more risky than others
+       Fit Criteria: The system shall show users why certain trades may be favorable or more risky than others 
        Rationale: Explains the reasoning and helps the users to start thinking on their own
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall offer easy, itermediate, and advanced training simulations
+       Fit Criteria: The system shall offer easy, itermediate, and advanced training simulations that vary the help provided
        Rationale: Allows the user to test their skills in harder challenges
  
        Requirement Type: Functional
        Priority Level: Medium
-       Fit Criteria: The system shall optional quiz-style assesments for the user to practice
+       Fit Criteria: The system shall have an optional quiz-style assesments for the user to practice their knoledge with stock trading
        Rationale: Allows the user to review what they have learned
  
        Requirement Type: Functional
        Priority Level: Medium
-       Fit Criteria: The system shall provide future learning oportunities and resources 
+       Fit Criteria: The system shall provide future learning oportunities and resources such as the history of stocks, how different factors affect them, and what to look out for if you want to become better
        Rationale: Allows for adamant users to learn more about stock trading
 
  * Interface and Display (36-39)
@@ -198,19 +198,19 @@ Senior Project Requirements: Stock Trading with AI Assistant
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall have helpful tips with current stocks depending on what difficulty is set
+       Fit Criteria: The system shall have helpful tips with current stocks depending on what difficulty is set. The easier the difficulty the more tips provided
        Rationale: Gives new users on a lower difficulty a better idea of how they can perform well
 
 * Testing and Debugging (40-44)
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall allow admin developers to run tests on all trading options
+       Fit Criteria: The system shall allow admin developers to run tests on all trading options ie buying more than what the stock is worth, trying to sell and buy more than what they have, and other fuzzer tests.
        Rationale: General testing for different things that the user may do
   
        Requirement Type: Functional
        Priority Level: Critical
-       Fit Criteria: The system shall include logging of all trading activity for both users and AI
+       Fit Criteria: The system shall include logging of all trading activity for both users and AI over all time.
        Rationale: Crucial to allowing the users and admin to view how not just the user is performing, but making sure that the program is as well
   
        Requirement Type: Functional
