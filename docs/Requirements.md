@@ -4,17 +4,17 @@ Senior Project Requirements: Stock Trading with AI Assistant
 *   Account / User (1-5)
 *      Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: Users can access their profile and settings from a menu
+       Fit Criteria: Users can access their profile and settings from a menu with a response time of 2 seconds
        Rationale: Enables users to have control over their configurations, data, and settings.
  
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system accuratly stores and retreives the users fake money balance and history
+       Fit Criteria: The system accuratly stores and retreives the users fake money balance and history with 100% accuracy
        Rationale: Allows the users to track their historic data and view mistakes they have made previously
   
        Requirement Type: Functional
        Priority Level: Medium
-       Fit Criteria: Users can manually reset their account and start over
+       Fit Criteria: Users can manually reset their account and start over with with confirmation steps
        Rationale: Provides a fresh start for users who feel stuck or confused  
 
        Requirement Type: Functional
@@ -215,10 +215,10 @@ Senior Project Requirements: Stock Trading with AI Assistant
   
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall include a "Debug mode" that pulls up the recent logs and data
+       Fit Criteria: The system shall include a "Debug mode" that pulls up the recent logs and data within the last 30 days
        Rationale: Gives raw data about the logs with more specifics that may be unnessary in the feedback
 
        Requirement Type: Functional
        Priority Level: High
-       Fit Criteria: The system shall warn users if the AI is having issues or crashes
+       Fit Criteria: The system shall warn users if the AI is having issues or crashes with a timout time of around 5 seconds
        Rationale: Makes sure that the AI is staying active and not in need of debugging
