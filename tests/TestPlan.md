@@ -174,7 +174,3 @@ Below is a list of test scenarios, test cases, and expected results based on the
 - **Test Case:**  
   1. Cause errors (invalid input, network issues)  
 - **Expected Result:** Program handles errors gracefully
-
----
-
-*This is a first draft and will be revised based on feedback.*
