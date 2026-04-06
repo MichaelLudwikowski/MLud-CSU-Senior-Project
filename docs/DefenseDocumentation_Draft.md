@@ -207,7 +207,7 @@ Overall, the current version already demonstrates the main idea of the project, 
 
 ---
 
-### Point 9: Future Enhancements
+## Point 9: Future Enhancements
 - multi-account workflow completion
 - improved AI performance tracking and reporting
 - expanded educational tools (alerts, quizzes, learning modules)
@@ -215,7 +215,7 @@ Overall, the current version already demonstrates the main idea of the project, 
 
 ---
 
-### Point 10: Defense Presentation Slides
+## Point 10: Defense Presentation Slides
 - 10-12 slides total
 - one main idea per slide
 - use app visuals alongside short bullet text
