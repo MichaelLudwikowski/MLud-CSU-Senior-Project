@@ -36,6 +36,25 @@ To support those learning goals, this project combines:
 - AI-assisted prediction output with confidence and risk messaging
 - web interface workflows for dashboard, stock browsing, practice mode, and simulation mode
 
+### Technical Expertise Developed
+
+This project required building skills beyond normal class assignments. I had to dive into multiple technical areas to put them into one working system and troubleshoot them together:
+
+- Flask web development:
+   I learned how to build a multi-page web app with routes, sessions, and user workflows (login, trading actions, portfolio views, and practice/simulation pages).
+
+- Database design:
+   I implemented SQLite tables and operations for users, accounts, holdings, and transactions. This included schema planning, data retrieval, updates after trades, and keeping the stored state consistent with the UI.
+
+- AI integration:
+   I integrated a local Ollama model for recommendations and built fallback logic when the AI model is unavailable. This required prompt design, output parsing, error handling, and reliability testing.
+
+- Full-stack integration and testing:
+   I connected backend logic, data services, AI output, chart rendering, and frontend display into one workflow. I also built and used test scripts and test cases to validate edge conditions and core features.
+
+This shows how course knowledge in programming, data structures, software engineering, and databases was expanded into a larger, production-style project workflow.
+
+
 ### Key Constraints Discovered
 1. Free market-data APIs may have strict request limits and slower refresh times.
 2. Some intraday or premium endpoints require paid tiers.
@@ -69,42 +88,51 @@ To support those learning goals, this project combines:
 
 ## Chapter 4: Project Requirements
 
+### Requirements Development Progression (CSCI 497)
+
+The project requirements were developed in stages instead of being written all at once. I started with a broad idea focused on helping beginner traders learn safely, then narrowed the scope based on advisor feedback and technical research.
+
+As I started planning out the project, I was able to create more practical requirements tied to real system behaviors, such as account management, stock data access, and AI recommendations. As the project progressed, I adjusted the requirements to keep the project in scope with the timeline while prioritizing the most important functionalities.
+
+This progression also helped separate completed features from future enhancements. Core workflows were kept as high priority for the final build, while advanced items such as deeper AI automation and broader account workflows were documented as partial or future work.
+
 ### Core Requirements Implemented
-1. Account and user management
+
+1. **Account and user management** (Priority: Critical)
    - user registration and login
    - logout and password reset flow in the web interface
    - account reset back to the default starting balance
 
-2. Wallet and transaction controls
+2. **Wallet and transaction controls** (Priority: Critical)
    - initialize new accounts with $1000 in fake money
    - prevent purchases when funds are not available
    - store holdings, balances, and transaction history in SQLite
 
-3. Stock data and analysis
+3. **Stock data and analysis** (Priority: High)
    - search stocks by symbol
    - retrieve quote and historical data with caching
    - display historical charts and stock detail information
 
-4. Trading operations
+4. **Trading operations** (Priority: Critical)
    - buy and sell stock through the application
    - update holdings and portfolio value after trades
    - calculate total value and gain/loss information
 
-5. AI analyst support
+5. **AI analyst support** (Priority: High)
    - generate buy, sell, or hold recommendations
    - include confidence, risk level, and a short rationale
 
-6. Learning and practice features
+6. **Learning and practice features** (Priority: High)
    - learning page for beginner information
    - historical simulation mode
    - practice mode with different difficulty settings
 
-7. Interface and display
+7. **Interface and display** (Priority: High)
    - dashboard with balance, holdings, and recent activity
    - portfolio page and stock detail pages
    - interactive charts using Bokeh
 
-8. Testing and reliability
+8. **Testing and reliability** (Priority: High)
    - test plan and written test cases
    - Python test scripts for API and AI integration work
    - transaction and balance validation in code
@@ -186,28 +214,68 @@ The project is meant for education, not for real investing. Even when real marke
 
 ## Chapter 7: Test Results Summary
 
-Testing for this project was documented through a formal test plan, CSV-based test case files, and Python test scripts in the repository. The current test materials focus on account creation, trading rules, API integration, AI integration, and data handling. These tests were useful for checking whether the main features worked as expected and whether the program handled common failures.
+Testing for this project was documented through a formal test plan, CSV-based test case files, and Python test scripts in the repository.
 
-The project repository includes test files such as test_alpha_vantage.py, test_ai_with_real_data.py, test_week2_api_integration.py, tests/test_ollama_integration.py, and tests/test_quick.py. There is also a larger written test plan and multiple test case spreadsheets and CSV files. Together, these show that testing was part of the project and not only something added at the very end.
+### Main Testing Evidence
 
-Based on the current project state, the strongest tested areas are the core workflows: creating a user, storing account data, preventing invalid trades, retrieving stock data, and generating AI-based analysis. These results support the main goal of the project, which is to provide a safe educational trading platform with portfolio tracking and AI assistance.
+- Written test strategy and scope documentation
+- 48 tabbed test-case files in test_cases_tabs (TC-001 through TC-048)
+- Python scripts covering API behavior, AI integration, and core workflows
 
-For the final defense package, this section can still be improved by adding pass/fail snapshots, screenshots from successful test runs, and a short table that maps major requirements to the test files or test cases that support them.
+### Tested Areas with Strongest Coverage
+
+- Account creation and account data persistence
+- Wallet enforcement and prevention of invalid trades
+- Stock lookup and market data retrieval behavior
+- AI recommendation generation with fallback handling
+
+These results support the main goal of the project, which is to provide a safe educational trading platform with portfolio tracking and AI assistance.
+
+### Requirements-to-Testing Traceability
+
+| Requirement Area | Evidence in Test Cases | Coverage Status |
+|---|---|---|
+| Account Management | TC-001 to TC-006 | Implemented |
+| Wallet and Transactions | TC-007 to TC-012 | Implemented |
+| Stock Data and Analysis | TC-015, TC-019, TC-047 | Implemented |
+| Trading Operations | TC-013, TC-014, TC-017, TC-018, TC-020 | Implemented |
+| AI Recommendations | TC-021 to TC-027 | Implemented (fallback supported) |
+| Practice and Simulation | TC-028 to TC-032, TC-048 | Partially Implemented (manual-heavy) |
+| Interface and Display | TC-033 to TC-035, TC-047, TC-048 | Implemented (primarily manual evidence) |
+| Testing and Reliability | TC-036 to TC-046 | Implemented |
+
+### Test Execution Snapshot
+
+- The test documentation currently includes 48 tabbed test cases (TC-001 through TC-048), covering account management, wallet controls, trading flows, AI features, educational features, interface behavior, and reliability scenarios.
+- Core workflow testing was prioritized first, especially account creation/login, wallet enforcement, buy/sell behavior, stock lookup, and AI recommendation output.
+- Majority of the test-case execution was manual with Python script-based checks being used, depending on the feature area and available automation support.
+- The strongest evidence is for core trading, stock data access, and AI recommendation flows, which align directly with the primary educational goals of the project.
+- Some advanced and future-facing features (such as deeper AI automation and expanded educational tooling) remain partially implemented and are documented as ongoing work rather than final completed scope.
 
 
 ---
 
-## Chapter 8: Future Enhancements
+## Chapter 8: Challenges Overcome
+
+One of the first challenges that I faced was API reliability and rate limits. Since free market-data APIs can limit requests or respond slowly, I had to add caching and fallback behavior so the app would still work during demos and testing instead of failing when the API was unavailable.
+
+Another challenge was AI dependency. The AI recommendation feature depends on a local Ollama model, so if the model server is not running or the model is not installed, predictions can fail. To handle this, I used fallback prediction logic so the system can still return a recommendation and keep the user workflow running.
+
+A third challenge was balancing realism with educational usability. I wanted the platform to feel like a real trading environment, but still be simple enough for beginners. This led to design decisions like fake-money accounts, clear dashboard metrics, practice mode with guided difficulty, and simulation mode for historical learning.
+
+I also had to manage project scope over time. Some features were designed in the data model but not fully exposed in the current user workflow, such as full multi-account operation and deeper AI automation. Instead of forcing unfinished features into the final build, I prioritized making the core flows stable and presentable.
+
+Overall, the main challenge was integration: combining data retrieval, AI analysis, trade execution, persistence, and frontend views into one consistent system. Solving those integration issues was one of the most important outcomes of the project.
+
+---
+
+## Point 9: Future Enhancements
 
 Future work for this project includes finishing multi-account support, improving AI performance tracking, and expanding the educational side of the platform. More detailed alerts, better reporting, and additional learning activities would make the system more useful for beginner traders.
 
 Another improvement would be better handling of real market data, especially around rate limits and refresh timing. The system could also be extended with stronger account security, more advanced portfolio analytics, and better administrative debugging tools.
 
 Overall, the current version already demonstrates the main idea of the project, and future work would build on that foundation rather than restarting from scratch.
-
----
-
-## Point 9: Future Enhancements
 - multi-account workflow completion
 - improved AI performance tracking and reporting
 - expanded educational tools (alerts, quizzes, learning modules)
@@ -218,7 +286,7 @@ Overall, the current version already demonstrates the main idea of the project, 
 ## Point 10: Defense Presentation Slides
 - 10-12 slides total
 - one main idea per slide
-- use app visuals alongside short bullet text
+- make sure to use app visuals alongside short bullet text
 
 Suggested slide order:
 1. Title slide
